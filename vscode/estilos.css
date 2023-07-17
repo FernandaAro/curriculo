@@ -1,0 +1,104 @@
+/* ESTILO GERAL */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #B1CEFF;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 30px;
+    font-size: 100%;
+    text-align: center;
+    background: #E9F1FF;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+}
+
+/* COLUNA ESQUERDA */
+.left-column {
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+}
+
+/* FOTO */
+#profissional-picture {
+    background-color: #aaa;
+    width: 100%;
+    padding: 0%;
+    animation-name: rotate-image;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+}
+
+/* COLUNA DO MEIO */
+.middle-column {
+    float: left;
+    width: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* COLUNA DA DIREITA */
+.right-column {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.card {
+    background-color: #E9F1FF;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #E9F1FF;
+    margin-top: 20px;
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media all and (max-width: 900px) {
+    header {
+        font-size: 100%;
+    }
+
+    .left-column {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .middle-column {
+        width: 100%;
+    }
+
+    .rigth-column {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@keyframes rotate-image {
+    50% {
+        transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg)
+    }
+}
